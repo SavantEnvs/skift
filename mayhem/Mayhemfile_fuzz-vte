@@ -1,0 +1,9 @@
+project: savantenvs/skift
+target: fuzz-vte
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-vte/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz-vte
+    libfuzzer: true
+    timeout: 5

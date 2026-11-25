@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "fuzz-luna",
+    "type": "exe",
+    "description": "Mayhem libFuzzer harness (luna)",
+    "enableIf": {
+        "sys": [
+            "linux"
+        ]
+    },
+    "requires": [
+        "luna.lang",
+        "karm-core",
+        "karm-diag",
+        "karm-sys",
+        "karm-logger",
+        "karm-debug"
+    ]
+}

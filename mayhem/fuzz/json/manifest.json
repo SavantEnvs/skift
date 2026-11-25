@@ -1,0 +1,17 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "fuzz-json",
+    "type": "exe",
+    "description": "Mayhem libFuzzer harness (json)",
+    "enableIf": {
+        "sys": [
+            "linux"
+        ]
+    },
+    "requires": [
+        "karm-core",
+        "karm-sys",
+        "karm-logger",
+        "karm-debug"
+    ]
+}

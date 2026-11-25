@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "fuzz-icc",
+    "type": "exe",
+    "description": "Mayhem libFuzzer harness (icc)",
+    "enableIf": {
+        "sys": [
+            "linux"
+        ]
+    },
+    "requires": [
+        "karm-icc",
+        "karm-core",
+        "karm-sys",
+        "karm-ref",
+        "karm-logger",
+        "karm-debug"
+    ]
+}

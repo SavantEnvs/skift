@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "fuzz-av",
+    "type": "exe",
+    "description": "Mayhem libFuzzer harness (av)",
+    "enableIf": {
+        "sys": [
+            "linux"
+        ]
+    },
+    "requires": [
+        "karm-av",
+        "karm-core",
+        "karm-sys",
+        "karm-logger",
+        "karm-debug"
+    ]
+}

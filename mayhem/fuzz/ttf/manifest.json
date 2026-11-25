@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+    "id": "fuzz-ttf",
+    "type": "exe",
+    "description": "Mayhem libFuzzer harness (ttf)",
+    "enableIf": {
+        "sys": [
+            "linux"
+        ]
+    },
+    "requires": [
+        "karm-font.ttf",
+        "karm-gfx",
+        "karm-core",
+        "karm-sys",
+        "karm-logger",
+        "karm-debug"
+    ]
+}
